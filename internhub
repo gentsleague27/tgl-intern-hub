@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TGL Program Intern Hub | The Gentlemen's League</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #0f172a;
+      --accent: #d97706;
+    }
+    .active-tab {
+      border-bottom: 3px solid #d97706;
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 min-h-screen flex flex-col">
+
+  <!-- Header & Navigation -->
+  <header class="bg-blue-950 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-3">
+        <div class="bg-amber-600 p-2.5 rounded-lg text-white font-black text-xl tracking-wider">TGL</div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight">The Gentlemen's League</h1>
+          <p class="text-xs text-slate-300">Program Intern Hub (Fall 2026)</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4 text-xs sm:text-sm bg-blue-900/60 px-4 py-2 rounded-lg border border-blue-800">
+        <div><span class="text-slate-400">Supervisor:</span> <span class="font-semibold text-amber-400">Tim Green</span></div>
+        <div class="h-4 w-px bg-blue-700"></div>
+        <div><span class="text-slate-400">Structure:</span> <span class="font-semibold">Shared 2-Intern Model</span></div>
+      </div>
+    </div>
+    
+    <!-- Nav Tabs -->
+    <nav class="bg-white border-b border-slate-200 text-slate-600">
+      <div class="max-w-7xl mx-auto px-4 flex overflow-x-auto space-x-8 text-sm font-medium">
+        <button onclick="switchTab('dashboard')" id="tab-dashboard" class="py-3 px-1 active-tab whitespace-nowrap flex items-center gap-2">
+          <i class="fa-solid fa-chart-pie"></i> Dashboard
+        </button>
+        <button onclick="switchTab('breakdown')" id="tab-breakdown" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+          <i class="fa-solid fa-clock"></i> Weekly Hours (10h/wk)
+        </button>
+        <button onclick="switchTab('roadmap')" id="tab-roadmap" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+          <i class="fa-solid fa-calendar-alt"></i> Roadmap & Deliverables
+        </button>
+        <button onclick="switchTab('resources')" id="tab-resources" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+          <i class="fa-solid fa-folder-open"></i> Systems & Data Trackers
+        </button>
+        <button onclick="switchTab('evaluation')" id="tab-evaluation" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+          <i class="fa-solid fa-user-graduate"></i> Professional Growth
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+
+    <!-- DASHBOARD TAB -->
+    <section id="view-dashboard" class="space-y-6">
+      <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-md">
+        <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">Welcome to the TGL Intern Hub</h2>
+        <p class="text-slate-300 max-w-3xl text-sm sm:text-base mb-6">
+          Supporting general site logistics, mentoring Gents across Alpha, Beta, Gamma, Delta, and Epsilon cohorts, and co-managing core operational domains.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-blue-800/60">
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+            <span class="text-xs text-amber-400 uppercase font-bold tracking-wider">Core Value</span>
+            <p class="text-lg font-bold mt-1">Excellence</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+            <span class="text-xs text-amber-400 uppercase font-bold tracking-wider">Core Value</span>
+            <p class="text-lg font-bold mt-1">Fellowship</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+            <span class="text-xs text-amber-400 uppercase font-bold tracking-wider">Core Value</span>
+            <p class="text-lg font-bold mt-1">Integrity</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+            <span class="text-xs text-amber-400 uppercase font-bold tracking-wider">Core Value</span>
+            <p class="text-lg font-bold mt-1">Joy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Quick Action Cards -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 bg-blue-100 text-blue-900 rounded-lg flex items-center justify-center mb-4 text-lg">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-1">Direct Mentoring</h3>
+          <p class="text-xs text-slate-500 mb-4">3 Hours / Week</p>
+          <p class="text-sm text-slate-600">Co-facilitate small group discussions using TGL Scope & Sequence across assigned cohorts.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 bg-amber-100 text-amber-900 rounded-lg flex items-center justify-center mb-4 text-lg">
+            <i class="fa-solid fa-clipboard-list"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-1">Site Ops & Data</h3>
+          <p class="text-xs text-slate-500 mb-4">2.5 Hours / Week</p>
+          <p class="text-sm text-slate-600">Log attendance into the School Quarterly Data Tracker and maintain Google Drive folders.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 bg-emerald-100 text-emerald-900 rounded-lg flex items-center justify-center mb-4 text-lg">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-1">Events & Media</h3>
+          <p class="text-xs text-slate-500 mb-4">4.5 Hours / Week</p>
+          <p class="text-sm text-slate-600">Support Monthly Workshops, Basketball League, Annual Conference, and ClassDojo media.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEKLY HOURS TAB -->
+    <section id="view-breakdown" class="hidden space-y-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-xl font-bold text-slate-900 mb-1">Shared Weekly Time Breakdown (10 Hours / Week)</h2>
+        <p class="text-sm text-slate-500 mb-6">Both interns share all responsibilities collaboratively across four primary operational domains.</p>
+        
+        <div class="space-y-6">
+          <!-- Domain 1 -->
+          <div class="border-b border-slate-100 pb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800">1. Direct Mentoring & Student Engagement</span>
+              <span class="bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded-full font-bold">3.0 Hours/Week</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Attend designated site sessions across Alpha, Beta, Gamma, Delta, and Epsilon cohorts.</li>
+              <li>Co-facilitate small group discussions alongside Site Coordinators using TGL Scope & Sequence.</li>
+              <li>Build trusting relationships grounded in TGL Core Values (*Excellence, Fellowship, Integrity, Joy*).</li>
+            </ul>
+          </div>
+
+          <!-- Domain 2 -->
+          <div class="border-b border-slate-100 pb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800">2. Site Coordinator Support & Operations</span>
+              <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-bold">2.5 Hours/Week</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Prep physical workshop materials, student handouts, and slide decks prior to weekly sessions.</li>
+              <li>Support site attendance tracking and log entries into the **School Quarterly Data Tracker**.</li>
+              <li>Maintain organized site folders and program documentation on Google Drive.</li>
+            </ul>
+          </div>
+
+          <!-- Domain 3 -->
+          <div class="border-b border-slate-100 pb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800">3. Signature Events & Community Workshops</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold">2.5 Hours/Week</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>**Monthly Workshops:** Venue setup, check-in, A/V equipment, speaker hospitality, and breakdown.</li>
+              <li>**TGL Annual Conference:** Speaker outreach tracking, registrant communications, booklet assembly.</li>
+              <li>**Elementary Basketball League:** Game-day logistics, scorekeeping, team check-in, student engagement.</li>
+            </ul>
+          </div>
+
+          <!-- Domain 4 -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800">4. Social Media & Media Marketing</span>
+              <span class="bg-purple-100 text-purple-800 text-xs px-2.5 py-1 rounded-full font-bold">2.0 Hours/Week</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+              <li>Capture photos and videos during site visits and events (verifying media waivers).</li>
+              <li>Draft social media posts, reels, and flyers highlighting "Gents in Action" and mentor spotlights.</li>
+              <li>Draft digital communications for families and community partners via ClassDojo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP TAB -->
+    <section id="view-roadmap" class="hidden space-y-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-xl font-bold text-slate-900 mb-1">Semester 1 Month-by-Month Roadmap</h2>
+        <p class="text-sm text-slate-500 mb-6">Key deliverables across the Fall semester (August – December 2026).</p>
+
+        <div class="space-y-4">
+          <!-- August -->
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 class="font-bold text-blue-900 text-base mb-1">August 2026: Onboarding, Training & Site Launch</h3>
+            <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
+              <li>Attend TGL Orientation; setup Drive access, Data Trackers, and media templates.</li>
+              <li>Assist in logistics, setup, and materials prep for the **Site Coordinator Retreat**.</li>
+              <li>Complete background checks and mentor safety training; shadow first site visits.</li>
+            </ul>
+          </div>
+
+          <!-- September -->
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 class="font-bold text-blue-900 text-base mb-1">September 2026: Kickoff & Community Workshop #1</h3>
+            <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
+              <li>Assist Site Coordinators with Quarter 1 workshop rollouts and enrollment tracking.</li>
+              <li>Execute **September Monthly Community Workshop** (setup, registration, media).</li>
+              <li>Launch "Meet the Gents / Mentor Spotlights" series and send ClassDojo parent invites.</li>
+            </ul>
+          </div>
+
+          <!-- October -->
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 class="font-bold text-blue-900 text-base mb-1">October 2026: Workshop #2 & Basketball League Prep</h3>
+            <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
+              <li>Conduct Q1 Data Tracker audit to verify attendance and session logs.</li>
+              <li>Execute **October Monthly Community Workshop** and assist with Basketball League team registrations.</li>
+              <li>Complete Mid-Semester Formal Check-in with supervisor Tim Green.</li>
+            </ul>
+          </div>
+
+          <!-- November -->
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 class="font-bold text-blue-900 text-base mb-1">November 2026: Conference Planning & League Launch</h3>
+            <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
+              <li>Manage game-day operations for the **Elementary Basketball League**.</li>
+              <li>Track presenter outreach, assemble booklets/swag bags, and map venue logistics for Annual Conference.</li>
+              <li>Execute **November Monthly Community Workshop**.</li>
+            </ul>
+          </div>
+
+          <!-- December -->
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 class="font-bold text-blue-900 text-base mb-1">December 2026: Step Back, Data Audit & Celebration</h3>
+            <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
+              <li>Finalize Q2 entries in School Quarterly Data Tracker and compile mid-year metrics.</li>
+              <li>Execute **December Monthly Community Workshop / Holiday Fellowship**.</li>
+              <li>Produce "Fall Semester Highlights" recap video/photo deck for leadership and board updates.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES TAB -->
+    <section id="view-resources" class="hidden space-y-6">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h3 class="font-bold text-slate-900 text-lg mb-3">Core Operational Systems</h3>
+          <div class="space-y-3 text-sm">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <p class="font-bold text-slate-800">School Quarterly Data Tracker</p>
+              <p class="text-slate-500 text-xs mt-0.5">Log weekly attendance, session logs, and enrollment for all cohorts.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <p class="font-bold text-slate-800">TGL Google Drive Shared Folder</p>
+              <p class="text-slate-500 text-xs mt-0.5">Access slide decks, workshop handouts, and administrative files.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <p class="font-bold text-slate-800">ClassDojo Parent Platform</p>
+              <p class="text-slate-500 text-xs mt-0.5">Send digital communications, announcements, and parent updates.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h3 class="font-bold text-slate-900 text-lg mb-3">Curriculum & Media Guidelines</h3>
+          <div class="space-y-3 text-sm">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <p class="font-bold text-slate-800">TGL Scope & Sequence</p>
+              <p class="text-slate-500 text-xs mt-0.5">Curriculum guide for co-facilitating small group discussions.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <p class="font-bold text-slate-800">Student Media Waiver Registry</p>
+              <p class="text-slate-500 text-xs mt-0.5">Verify photo/video consent before publishing social content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVALUATION TAB -->
+    <section id="view-evaluation" class="hidden space-y-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">Intern Evaluation & Professional Development</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-4 bg-blue-50/50 border border-blue-100 rounded-lg">
+            <h3 class="font-bold text-blue-900 mb-1">Bi-Weekly 1-on-1s</h3>
+            <p class="text-sm text-slate-600">30-minute check-ins with supervisor Tim Green to track goals, review workload, and resolve challenges.</p>
+          </div>
+
+          <div class="p-4 bg-amber-50/50 border border-amber-100 rounded-lg">
+            <h3 class="font-bold text-amber-900 mb-1">Mid-Semester Check-In</h3>
+            <p class="text-sm text-slate-600">Formal review in October assessing progress across site support, event execution, and mentor leadership.</p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/50 border border-emerald-100 rounded-lg">
+            <h3 class="font-bold text-emerald-900 mb-1">Growth Opportunities</h3>
+            <p class="text-sm text-slate-600">Resume-building experience in non-profit operations, youth development, media creation, and large-scale event production.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs text-center py-4 border-t border-slate-800">
+    The Gentlemen's League &copy; 2026 | Program Intern Operations Hub
+  </footer>
+
+  <script>
+    function switchTab(tabName) {
+      // Hide all sections
+      const sections = ['dashboard', 'breakdown', 'roadmap', 'resources', 'evaluation'];
+      sections.forEach(s => {
+        document.getElementById('view-' + s).classList.add('hidden');
+        document.getElementById('tab-' + s).classList.remove('active-tab');
+      });
+
+      // Show selected section
+      document.getElementById('view-' + tabName).classList.remove('hidden');
+      document.getElementById('tab-' + tabName).classList.add('active-tab');
+    }
+  </script>
+</body>
+</html>
