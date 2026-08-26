@@ -41,19 +41,19 @@
     <!-- Nav Tabs -->
     <nav class="bg-white border-b border-slate-200 text-slate-600">
       <div class="max-w-7xl mx-auto px-4 flex overflow-x-auto space-x-8 text-sm font-medium">
-        <button onclick="switchTab('dashboard')" id="tab-dashboard" class="py-3 px-1 active-tab whitespace-nowrap flex items-center gap-2">
+        <button type="button" onclick="switchTab('dashboard', event)" id="tab-dashboard" class="py-3 px-1 active-tab whitespace-nowrap flex items-center gap-2">
           <i class="fa-solid fa-chart-pie"></i> Dashboard
         </button>
-        <button onclick="switchTab('breakdown')" id="tab-breakdown" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+        <button type="button" onclick="switchTab('breakdown', event)" id="tab-breakdown" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
           <i class="fa-solid fa-clock"></i> Weekly Hours (10h/wk)
         </button>
-        <button onclick="switchTab('roadmap')" id="tab-roadmap" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+        <button type="button" onclick="switchTab('roadmap', event)" id="tab-roadmap" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
           <i class="fa-solid fa-calendar-alt"></i> Roadmap & Deliverables
         </button>
-        <button onclick="switchTab('resources')" id="tab-resources" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+        <button type="button" onclick="switchTab('resources', event)" id="tab-resources" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
           <i class="fa-solid fa-folder-open"></i> Systems & Data Trackers
         </button>
-        <button onclick="switchTab('evaluation')" id="tab-evaluation" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
+        <button type="button" onclick="switchTab('evaluation', event)" id="tab-evaluation" class="py-3 px-1 whitespace-nowrap flex items-center gap-2">
           <i class="fa-solid fa-user-graduate"></i> Professional Growth
         </button>
       </div>
@@ -137,7 +137,7 @@
             <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
               <li>Attend designated site sessions across Alpha, Beta, Gamma, Delta, and Epsilon cohorts.</li>
               <li>Co-facilitate small group discussions alongside Site Coordinators using TGL Scope & Sequence.</li>
-              <li>Build trusting relationships grounded in TGL Core Values (*Excellence, Fellowship, Integrity, Joy*).</li>
+              <li>Build trusting relationships grounded in TGL Core Values (<em>Excellence, Fellowship, Integrity, Joy</em>).</li>
             </ul>
           </div>
 
@@ -149,7 +149,7 @@
             </div>
             <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
               <li>Prep physical workshop materials, student handouts, and slide decks prior to weekly sessions.</li>
-              <li>Support site attendance tracking and log entries into the **School Quarterly Data Tracker**.</li>
+              <li>Support site attendance tracking and log entries into the <strong>School Quarterly Data Tracker</strong>.</li>
               <li>Maintain organized site folders and program documentation on Google Drive.</li>
             </ul>
           </div>
@@ -161,9 +161,9 @@
               <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold">2.5 Hours/Week</span>
             </div>
             <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-              <li>**Monthly Workshops:** Venue setup, check-in, A/V equipment, speaker hospitality, and breakdown.</li>
-              <li>**TGL Annual Conference:** Speaker outreach tracking, registrant communications, booklet assembly.</li>
-              <li>**Elementary Basketball League:** Game-day logistics, scorekeeping, team check-in, student engagement.</li>
+              <li><strong>Monthly Workshops:</strong> Venue setup, check-in, A/V equipment, speaker hospitality, and breakdown.</li>
+              <li><strong>TGL Annual Conference:</strong> Speaker outreach tracking, registrant communications, booklet assembly.</li>
+              <li><strong>Elementary Basketball League:</strong> Game-day logistics, scorekeeping, team check-in, student engagement.</li>
             </ul>
           </div>
 
@@ -195,7 +195,7 @@
             <h3 class="font-bold text-blue-900 text-base mb-1">August 2026: Onboarding, Training & Site Launch</h3>
             <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
               <li>Attend TGL Orientation; setup Drive access, Data Trackers, and media templates.</li>
-              <li>Assist in logistics, setup, and materials prep for the **Site Coordinator Retreat**.</li>
+              <li>Assist in logistics, setup, and materials prep for the <strong>Site Coordinator Retreat</strong>.</li>
               <li>Complete background checks and mentor safety training; shadow first site visits.</li>
             </ul>
           </div>
@@ -205,7 +205,7 @@
             <h3 class="font-bold text-blue-900 text-base mb-1">September 2026: Kickoff & Community Workshop #1</h3>
             <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
               <li>Assist Site Coordinators with Quarter 1 workshop rollouts and enrollment tracking.</li>
-              <li>Execute **September Monthly Community Workshop** (setup, registration, media).</li>
+              <li>Execute <strong>September Monthly Community Workshop</strong> (setup, registration, media).</li>
               <li>Launch "Meet the Gents / Mentor Spotlights" series and send ClassDojo parent invites.</li>
             </ul>
           </div>
@@ -215,7 +215,7 @@
             <h3 class="font-bold text-blue-900 text-base mb-1">October 2026: Workshop #2 & Basketball League Prep</h3>
             <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
               <li>Conduct Q1 Data Tracker audit to verify attendance and session logs.</li>
-              <li>Execute **October Monthly Community Workshop** and assist with Basketball League team registrations.</li>
+              <li>Execute <strong>October Monthly Community Workshop</strong> and assist with Basketball League team registrations.</li>
               <li>Complete Mid-Semester Formal Check-in with supervisor Tim Green.</li>
             </ul>
           </div>
@@ -224,9 +224,9 @@
           <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
             <h3 class="font-bold text-blue-900 text-base mb-1">November 2026: Conference Planning & League Launch</h3>
             <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
-              <li>Manage game-day operations for the **Elementary Basketball League**.</li>
+              <li>Manage game-day operations for the <strong>Elementary Basketball League</strong>.</li>
               <li>Track presenter outreach, assemble booklets/swag bags, and map venue logistics for Annual Conference.</li>
-              <li>Execute **November Monthly Community Workshop**.</li>
+              <li>Execute <strong>November Monthly Community Workshop</strong>.</li>
             </ul>
           </div>
 
@@ -235,7 +235,7 @@
             <h3 class="font-bold text-blue-900 text-base mb-1">December 2026: Step Back, Data Audit & Celebration</h3>
             <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
               <li>Finalize Q2 entries in School Quarterly Data Tracker and compile mid-year metrics.</li>
-              <li>Execute **December Monthly Community Workshop / Holiday Fellowship**.</li>
+              <li>Execute <strong>December Monthly Community Workshop / Holiday Fellowship</strong>.</li>
               <li>Produce "Fall Semester Highlights" recap video/photo deck for leadership and board updates.</li>
             </ul>
           </div>
@@ -311,18 +311,41 @@
   </footer>
 
   <script>
-    function switchTab(tabName) {
-      // Hide all sections
+    function switchTab(tabName, event) {
+      if (event) {
+        event.preventDefault();
+      }
+
       const sections = ['dashboard', 'breakdown', 'roadmap', 'resources', 'evaluation'];
+
       sections.forEach(s => {
-        document.getElementById('view-' + s).classList.add('hidden');
-        document.getElementById('tab-' + s).classList.remove('active-tab');
+        const view = document.getElementById('view-' + s);
+        const tab = document.getElementById('tab-' + s);
+        if (view) view.classList.add('hidden');
+        if (tab) tab.classList.remove('active-tab');
       });
 
-      // Show selected section
-      document.getElementById('view-' + tabName).classList.remove('hidden');
-      document.getElementById('tab-' + tabName).classList.add('active-tab');
+      const activeView = document.getElementById('view-' + tabName);
+      const activeTab = document.getElementById('tab-' + tabName);
+
+      if (activeView) activeView.classList.remove('hidden');
+      if (activeTab) activeTab.classList.add('active-tab');
+
+      // Sync location hash without triggering reload
+      if (history.pushState) {
+        history.pushState(null, null, '#' + tabName);
+      } else {
+        location.hash = '#' + tabName;
+      }
     }
+
+    // Load correct tab if URL contains a hash on page refresh
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && ['dashboard', 'breakdown', 'roadmap', 'resources', 'evaluation'].includes(hash)) {
+        switchTab(hash);
+      }
+    });
   </script>
 </body>
 </html>
