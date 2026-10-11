@@ -99,6 +99,8 @@
           <h3 class="font-bold text-slate-900 mb-1">Direct Mentoring</h3>
           <p class="text-xs text-slate-500 mb-4">3 Hours / Week</p>
           <p class="text-sm text-slate-600">Co-facilitate small group discussions using TGL Scope & Sequence across assigned cohorts.</p>
+          <p class="text-sm text-slate-600 mt-2">A community mentor is someone who is not currently employed by the school. Community mentors must go through the volunteer process with MSCS.</p>
+          <p class="text-sm text-slate-600 mt-2">The mentor log is a Google Form that the site coordinator will share. It is important to complete this log after each interaction with a student.</p>
         </div>
 
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
@@ -138,6 +140,7 @@
               <li>Attend designated site sessions across Alpha, Beta, Gamma, Delta, and Epsilon cohorts.</li>
               <li>Co-facilitate small group discussions alongside Site Coordinators using TGL Scope & Sequence.</li>
               <li>Build trusting relationships grounded in TGL Core Values (<em>Excellence, Fellowship, Integrity, Joy</em>).</li>
+              <li>Complete the mentor log after each interaction with a student using the Google Form shared by the site coordinator.</li>
             </ul>
           </div>
 
@@ -249,6 +252,10 @@
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
           <h3 class="font-bold text-slate-900 text-lg mb-3">Core Operational Systems</h3>
           <div class="space-y-3 text-sm">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <p class="font-bold text-slate-800">Mentor Log</p>
+              <p class="text-slate-500 text-xs mt-0.5">The mentor log is a Google Form that the site coordinator will share. It is important to complete this log after each interaction with a student.</p>
+            </div>
             <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
               <p class="font-bold text-slate-800">School Quarterly Data Tracker</p>
               <p class="text-slate-500 text-xs mt-0.5">Log weekly attendance, session logs, and enrollment for all cohorts.</p>
